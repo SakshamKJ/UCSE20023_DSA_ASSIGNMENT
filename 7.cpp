@@ -6,9 +6,9 @@ using namespace std;
 vector<int> djikstra(int graph[V][V],int src) 
 { 
 
-	vector<int> dist(V,INT_MAX);
+	vector<int> dist(V,INT_MAX);					//dist = distance
 	dist[src]=0;
-	vector<bool> fin(V,false);
+	vector<bool> fin(V,false);					//fin = finalized
 
 	for (int count = 0; count < V-1 ; count++) 
 	{ 
