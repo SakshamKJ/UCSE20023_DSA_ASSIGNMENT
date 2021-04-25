@@ -2,13 +2,13 @@
 using namespace std;
 
 #define V 4                       /*NUMBER OF VERTICES*/
-
+// an array of vectors can be used as a matrix by enclosing them in curly braces
 vector<int> djikstra(int graph[V][V],int src) 
 { 
 
-	vector<int> dist(V,INT_MAX);					//dist = distance
+	vector<int> dist(V,INT_MAX);					//dist = distance array
 	dist[src]=0;
-	vector<bool> fin(V,false);					//fin = finalized
+	vector<bool> fin(V,false);					//fin = finalized array
 
 	for (int count = 0; count < V-1 ; count++) 
 	{ 
