@@ -22,7 +22,7 @@ Node *insert(Node *root, int x){
     return root;
 } 
 
-Node *getSuccessor(Node *curr){
+Node *Successor(Node *curr){
     curr=curr->right;
     while(curr!=NULL && curr->left!=NULL)
         curr=curr->left;
@@ -48,7 +48,7 @@ Node *delNode(Node *root, int x){
             return temp;
         }
         else{
-            Node *succ=getSuccessor(root);
+            Node *succ=Successor(root);
             root->key=succ->key;
             root->right=delNode(root->right,succ->key);
         }
