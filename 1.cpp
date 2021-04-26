@@ -43,5 +43,5 @@ int main() {
 								     32		 41
 
 	*/
-	inorder(root);
+	inorder(root);			// as we cannot print the structure of TREE Data Structure, so, to view it, we use inorder traversal to view the nodes of the Tree
 }
