@@ -21,7 +21,7 @@ void heapify(int arr[], int n, int i)
 } 
 
 void buildheap(int arr[],int n){
-    for (int i = n / 2 - 1; i >= 0; i--) 
+    for (int i = n / 2 - 1; i >= 0; i--) 		// function to build the heap (rearraning the array)
 		heapify(arr, n, i);
 }
 void heapSort(int arr[], int n) 
@@ -29,8 +29,8 @@ void heapSort(int arr[], int n)
 	buildheap(arr,n); 
 
 	for (int i=n-1; i>0; i--) 
-	{ 
-		swap(arr[0], arr[i]);
+	{ 						// here, we extract elements one by one from the heap
+		swap(arr[0], arr[i]);			// now, we move the current root to the end by using the swap built - in function
 		heapify(arr, i, 0); 
 	} 
 } 
