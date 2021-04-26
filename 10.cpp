@@ -43,8 +43,8 @@ void printArray(int arr[], int n)
  
 int main() 
 { 
-	int arr[] = {12,18,23,01,5,8,123,98,49,43,20,56,77}; 
-	int n = sizeof(arr)/sizeof(arr[0]); 
+	int arr[] = {12,18,23,01,5,8,123,98,49,43,20,56,77}; 		// we give the main function an array in unordered sequence which needs to be ordered using Heap Sort 
+	int n = sizeof(arr)/sizeof(arr[0]); 				// to check the size of the array
 
 	heapSort(arr, n); 
 
