@@ -7,15 +7,15 @@ int main()
     int arr[40];
     int arr_size, i;
  
-    printf("Enter the number of elements: ");
+    printf("Enter the number of elements in the array: ");
     scanf("%d", &arr_size); 
-    printf("Enter the elements to be sorted:\n");
+    printf("Enter the elements of the array to be sorted:\n");
     for (i=0;i<arr_size;i++)
     {
         scanf("%d",&arr[i]);
     } 
     quicksort(arr,0,arr_size-1);
-    printf("After applying quick sort\n");
+    printf("Array after Quick Sort:\n");
     for (i=0;i<arr_size;i++)
     {
         printf("%d ",arr[i]);
